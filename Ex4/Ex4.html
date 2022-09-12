@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex4</title>
+    <script>
+        
+        function mostrarResult(){
+            var n1 = Number(document.getElementById("nota1").value)
+        var n2 = Number(document.getElementById("nota2").value)
+        var soma = Number(n1+n2); 
+        if(n1<=50 && n2<=50) {
+            if(soma>=60){
+                alert("Aprovado")
+            }
+            else{
+                alert("Reprovado")
+            }
+        } 
+        else{
+            alert("Notas Invalidas")
+        }    
+        }
+    </script>
+</head>
+<body>
+    <label for="">Nome (1º bimestre)</label>
+    <input type="text" id="nota1">
+    <br><br>
+    <label for="">Nome (2º bimestre)</label>
+    <input type="text" id="nota2">
+    <br>
+    <br>
+    <input type="button" id="resultado" value="Resultado" onclick="mostrarResult()">
+</body>
+</html>

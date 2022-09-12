@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 6</title>
+
+    <script>
+        function soma(){
+            n1 = Number(document.getElementById("num1").value)
+            n2 = Number(document.getElementById("num2").value)
+            if(n1!=0 && n2!=0){
+                resultado = n1+n2
+                document.getElementById("resultado").value=resultado
+            }   
+        }
+        function subtracao(){
+            n1 = Number(document.getElementById("num1").value)
+            n2 = Number(document.getElementById("num2").value)
+            if(n1!=0 && n2!=0){
+                resultado = n1-n2
+                document.getElementById("resultado").value=resultado
+            }   
+        }
+        function multi(){
+            n1 = Number(document.getElementById("num1").value)
+            n2 = Number(document.getElementById("num2").value)
+            if(n1!=0 && n2!=0){
+                resultado = n1*n2
+                document.getElementById("resultado").value=resultado
+            }   
+        }
+        function divisao(){
+            n1 = Number(document.getElementById("num1").value)
+            n2 = Number(document.getElementById("num2").value)
+            if(n1!=0 && n2!=0 && n1!=null && n2!=null){
+                resultado = n1/n2
+                document.getElementById("resultado").value=resultado
+            }   
+            else if(n1==0||n2==0){
+                alert("Divisões por 0 não são possiveis")
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <form action="">
+        <label for="num1"> 1º valor: </label>
+        <input type="number" id="num1"> <br> <br>
+        <label for="num2"> 2º valor: </label>
+        <input type="number" id="num2"> <br> <br>
+
+        <table>
+            <tr>
+                <td><input type="button" value=" + " onclick="soma()"></td>
+                <td><input type="button" value=" - " onclick="subtracao()"></td>
+                <td><input type="button" value=" * " onclick="multi()"></td>
+                <td><input type="button" value=" / " onclick="divisao()"></td>
+            </tr>
+        </table>
+            <br>
+        <label for="resultado"> Resultado: </label>
+        <input type="text" id="resultado">
+    </form>
+</body>
+</html>
