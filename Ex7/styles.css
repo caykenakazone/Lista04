@@ -1,8 +1,30 @@
+.container{
+    width: 500px;
+    border: 2px solid black;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
-form{
-    
+h1{
+    font-size: 24px;
+    color: blue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
 }
-form tr{
-    text-align: center;
+
+label{
+    font-weight: bold;
+    
+}
+
+span{
+    color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;    
+}
+
+table{
+    padding: 25px;
 }
